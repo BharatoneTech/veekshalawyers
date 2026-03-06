@@ -316,15 +316,17 @@ export default function ServicesPage() {
           {/* SIDEBAR */}
           <aside className="sidebar">
             <div className="sans" style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', paddingLeft: '12px' }}>On This Page</div>
-            {[
-              ['property', 'Property Law', true],
-              ['buying', 'Buying Property', false],
-              ['selling', 'Selling Property', false],
-              ['property-approach', 'Client Approach', false],
-              ['immigration', 'Immigration Law', true],
-              ['visa-applications', 'Visa Applications', false],
-              ['immigration-support', 'Personalised Support', false],
-            ].map(([id, label, isMain]) => (
+           {(
+  [
+    ['property', 'Property Law', true],
+    ['buying', 'Buying Property', false],
+    ['selling', 'Selling Property', false],
+    ['property-approach', 'Client Approach', false],
+    ['immigration', 'Immigration Law', true],
+    ['visa-applications', 'Visa Applications', false],
+    ['immigration-support', 'Personalised Support', false],
+  ] as [string, string, boolean][]
+).map(([id, label, isMain]) => (
               <span key={id}
                 className={`sidebar-link${activeSection === id ? ' active' : ''}`}
                 style={{ fontWeight: isMain ? 600 : 400, marginTop: isMain ? '8px' : '0', fontSize: isMain ? '11.5px' : '11px' }}

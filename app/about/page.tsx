@@ -11,10 +11,10 @@ export default function VeekshaLawyers() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-    setMenuOpen(false)
-  }
+  const scrollTo = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  setMenuOpen(false)
+}
 
   const navScrolled = scrollY > 60
 
@@ -503,8 +503,12 @@ export default function VeekshaLawyers() {
               <div key={label} className="svc-card">
                 <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
                   <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', filter: 'grayscale(10%)' }}
-                    onMouseEnter={e => e.target.style.transform = 'scale(1.04)'}
-                    onMouseLeave={e => e.target.style.transform = 'scale(1)'} />
+                   onMouseEnter={(e) => {
+  e.currentTarget.style.transform = 'scale(1.04)'
+}}
+onMouseLeave={(e) => {
+  e.currentTarget.style.transform = 'scale(1)'
+}}/>
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 40%, rgba(14,30,53,0.75) 100%)' }} />
                   <div style={{ position: 'absolute', top: '20px', left: '20px', background: 'var(--gold)', color: '#fff', fontFamily: 'Outfit,sans-serif', fontSize: '10px', fontWeight: 600, letterSpacing: '2px', padding: '5px 12px', borderRadius: '2px' }}>0{num}</div>
                 </div>

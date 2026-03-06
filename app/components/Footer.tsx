@@ -334,9 +334,11 @@ export default function Footer() {
                 src="/logo.png"
                 alt="Veeksha Lawyers Logo"
                 onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  e.currentTarget.nextSibling.style.display = 'flex'
-                }}
+  const target = e.currentTarget
+  target.style.display = 'none'
+  const placeholder = target.nextElementSibling as HTMLElement | null
+  if (placeholder) placeholder.style.display = 'flex'
+}}
               />
               <div className="footer-logo-placeholder" style={{ display: 'none' }}>
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -479,9 +481,14 @@ export default function Footer() {
                 src="/firm.png"
                 alt="Veeksha Lawyers Firm"
                 onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  e.currentTarget.nextSibling.style.display = 'flex'
-                }}
+  const target = e.currentTarget
+  target.style.display = 'none'
+
+  const placeholder = target.nextElementSibling as HTMLElement | null
+  if (placeholder) {
+    placeholder.style.display = 'flex'
+  }
+}}
               />
               <div className="footer-firm-img-placeholder" style={{ display: 'none' }}>
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none">

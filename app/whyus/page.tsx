@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 export default function WhyUsPage() {
   const [scrollY, setScrollY] = useState(0)
-  const [activeReason, setActiveReason] = useState(null)
+  const [activeReason, setActiveReason] = useState<string | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -408,7 +408,8 @@ export default function WhyUsPage() {
                 key={r.num}
                 className={`reason-card${activeReason === r.num ? ' expanded' : ''}`}
                 onClick={() => setActiveReason(activeReason === r.num ? null : r.num)}
-              >
+                
+            >
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
                   <div className="reason-icon-wrap">{r.icon}</div>
                   <div className="reason-num">{r.num}</div>

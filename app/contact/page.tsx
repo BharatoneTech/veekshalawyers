@@ -15,8 +15,16 @@ export default function ContactPage() {
   }, [])
 
   const navScrolled = scrollY > 60
-  const handleChange = (e) => setFormData(p => ({ ...p, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+ 
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  setFormData(p => ({ ...p, [e.target.name]: e.target.value }))
+}
+
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault()
+  setSubmitted(true)
+}
 
   return (
     <div style={{ fontFamily: "'DM Serif Display', Georgia, serif", background: '#FAFAF8', color: '#1C1C1C', overflowX: 'hidden' }}>
@@ -525,7 +533,8 @@ export default function ContactPage() {
             width="100%"
             height="460"
             style={{ border: 0, display: 'block', filter: 'grayscale(20%) contrast(1.05)' }}
-            allowFullScreen=""
+         
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
