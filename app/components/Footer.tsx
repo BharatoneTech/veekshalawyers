@@ -351,7 +351,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-firm-name">Veeksha Lawyers</div>
-            <div className="footer-firm-sub">& Consultancy Pty Ltd</div>
+            <div className="footer-firm-sub">& CONSULTANTS Pty Ltd</div>
 
             <p className="footer-tagline">
               Trusted legal experts in Property Law and Immigration Law across New South Wales since 2014.
@@ -468,7 +468,7 @@ export default function Footer() {
 
           <div className="footer-bottom-left">
             <div className="footer-copyright">
-              © 2026 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia · All rights reserved
+              © 2026 Veeksha Lawyers & Consultants Pty Ltd · NSW, Australia · All rights reserved
             </div>
             <div className="footer-disclaimer">
               Liability limited by a scheme approved under Professional Standards Legislation. This website contains general legal information only and does not constitute legal advice.

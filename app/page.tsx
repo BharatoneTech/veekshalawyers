@@ -376,10 +376,10 @@ export default function VeekshaLawyers() {
                 </div>
               </div>
               {/* Credential badge */}
-              <div style={{ position: 'absolute', top: '-12px', right: '-12px', background: 'var(--gold)', borderRadius: '2px', padding: '12px 16px', boxShadow: '0 8px 24px rgba(184,150,90,0.35)' }}>
+              {/* <div style={{ position: 'absolute', top: '-12px', right: '-12px', background: 'var(--gold)', borderRadius: '2px', padding: '12px 16px', boxShadow: '0 8px 24px rgba(184,150,90,0.35)' }}>
                 <div className="serif" style={{ fontSize: '16px', color: '#fff', lineHeight: 1 }}>NSW</div>
                 <div className="sans" style={{ fontSize: '9px', letterSpacing: '2px', color: 'rgba(255,255,255,0.75)', fontWeight: 500 }}>Certified</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -477,7 +477,7 @@ export default function VeekshaLawyers() {
         </div>
       </section>
 
-      {/* ─── SERVICES ─── */}
+     {/* ─── SERVICES ─── */}
       <section id="services" className="section-pad" style={{ padding: '112px 64px', background: 'var(--cream)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ marginBottom: '64px' }}>
@@ -490,17 +490,19 @@ export default function VeekshaLawyers() {
               {
                 img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80',
                 num: '01', label: 'Property Law',
+                href: '/services#property',
                 desc: 'Comprehensive legal guidance for all your property needs across New South Wales — from contract review to settlement.',
                 items: ['Buying & selling residential property', 'Contract review and advice', 'Conveyancing & settlement services', 'Off-the-plan & strata title purchases', 'Property transfers between family', 'Title searches and due diligence']
               },
               {
                 img: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=700&q=80',
                 num: '02', label: 'Immigration Law',
+                href: '/services#immigration',
                 desc: "Expert immigration assistance for individuals, families, and businesses navigating Australia's visa and migration system.",
                 items: ['Student & partner visas', 'Skilled migration visas', 'Employer-sponsored visas', 'Visitor visas', 'Permanent residency applications', 'Citizenship applications']
               }
-            ].map(({ img, num, label, desc, items }) => (
-              <div key={label} className="svc-card">
+            ].map(({ img, num, label, desc, items, href }) => (
+              <div key={label} className="svc-card" onClick={() => window.location.href = href} style={{ cursor: 'pointer' }}>
                 <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
                   <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', filter: 'grayscale(10%)' }}
                    onMouseEnter={(e) => {
@@ -528,7 +530,7 @@ onMouseLeave={(e) => {
                     ))}
                   </div>
                   <div style={{ marginTop: '28px' }}>
-                    <span className="arrow-link">Learn More <span>→</span></span>
+                    <a href={href} className="arrow-link" onClick={(e) => e.stopPropagation()}>Learn More <span>→</span></a>
                   </div>
                 </div>
               </div>
