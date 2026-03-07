@@ -463,47 +463,59 @@ export default function Footer() {
           <hr className="footer-divider-line" />
         </div>
 
-        {/* ── BOTTOM BAR ── */}
-        <div className="footer-bottom">
+       {/* ── BOTTOM BAR ── */}
+{/* ── BOTTOM BAR ── */}
+<div className="footer-bottom">
 
-          <div className="footer-bottom-left">
-            <div className="footer-copyright">
-              © 2026 Veeksha Lawyers & Consultants Pty Ltd · NSW, Australia · All rights reserved
-            </div>
-            <div className="footer-disclaimer">
-              Liability limited by a scheme approved under Professional Standards Legislation. This website contains general legal information only and does not constitute legal advice.
-            </div>
-          </div>
+  <div className="footer-bottom-left">
+    <div className="footer-copyright">
+      © 2026 Veeksha Lawyers & Consultants Pty Ltd · NSW, Australia · All rights reserved
+    </div>
+    <div className="footer-disclaimer">
+      Liability limited by a scheme approved under Professional Standards Legislation. This website contains general legal information only and does not constitute legal advice.
+    </div>
+  </div>
 
-          <div className="footer-firm-img-wrap">
-            <div className="footer-firm-img-box">
-              <img
-                src="/firm.png"
-                alt="Veeksha Lawyers Firm"
-                onError={(e) => {
-  const target = e.currentTarget
-  target.style.display = 'none'
+  <div className="footer-firm-img-wrap">
+    <div className="footer-firm-img-box">
+      <img
+        src="/firm.png"
+        alt="Veeksha Lawyers Firm"
+        onError={(e) => {
+          const target = e.currentTarget
+          target.style.display = 'none'
+          const placeholder = target.nextElementSibling as HTMLElement | null
+          if (placeholder) placeholder.style.display = 'flex'
+        }}
+      />
+      <div className="footer-firm-img-placeholder" style={{ display: 'none' }}>
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="1" y="1" width="34" height="34" rx="3" stroke="rgba(184,150,90,0.4)" strokeWidth="1.5" strokeDasharray="4 2"/>
+          <rect x="6" y="22" width="24" height="8" rx="1" fill="rgba(184,150,90,0.15)"/>
+          <rect x="10" y="14" width="6" height="8" rx="1" fill="rgba(184,150,90,0.2)"/>
+          <rect x="20" y="16" width="6" height="6" rx="1" fill="rgba(184,150,90,0.2)"/>
+          <path d="M14 14 L18 8 L22 14" stroke="rgba(184,150,90,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <div className="footer-firm-label">Veeksha Lawyers · NSW</div>
+  </div>
 
-  const placeholder = target.nextElementSibling as HTMLElement | null
-  if (placeholder) {
-    placeholder.style.display = 'flex'
-  }
-}}
-              />
-              <div className="footer-firm-img-placeholder" style={{ display: 'none' }}>
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <rect x="1" y="1" width="34" height="34" rx="3" stroke="rgba(184,150,90,0.4)" strokeWidth="1.5" strokeDasharray="4 2"/>
-                  <rect x="6" y="22" width="24" height="8" rx="1" fill="rgba(184,150,90,0.15)"/>
-                  <rect x="10" y="14" width="6" height="8" rx="1" fill="rgba(184,150,90,0.2)"/>
-                  <rect x="20" y="16" width="6" height="6" rx="1" fill="rgba(184,150,90,0.2)"/>
-                  <path d="M14 14 L18 8 L22 14" stroke="rgba(184,150,90,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-            </div>
-            <div className="footer-firm-label">Veeksha Lawyers · NSW</div>
-          </div>
-        </div>
+</div>
 
+
+{/* ── CREDIT BAR ── */}
+<div style={{ borderTop: '1px solid rgba(184,150,90,0.25)', padding: '16px 64px', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', zIndex: 2, background: 'rgba(184,150,90,0.06)' }}>
+  <span style={{ fontFamily: 'Outfit, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.55)', fontWeight: 600 }}>
+    Designed & Developed by{' '}
+    <a href="https://mybharatone.com" target="_blank" rel="noopener noreferrer"
+      style={{ color: 'var(--gold)', textDecoration: 'none', fontWeight: 700, letterSpacing: '0.3px', transition: 'opacity 0.25s' }}
+      onMouseEnter={e => e.currentTarget.style.opacity = '0.75'}
+      onMouseLeave={e => e.currentTarget.style.opacity = '1'}>
+      BharatOne Services and Affiliates Pvt Ltd
+    </a>
+  </span>
+</div>
       </footer>
     </>
   )
