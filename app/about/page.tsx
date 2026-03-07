@@ -368,7 +368,7 @@ export default function VeekshaLawyers() {
             {/* Right: Profile card */}
             <div className="hero-right-col fi" style={{ position: 'relative' }}>
               <div style={{ borderRadius: '2px', overflow: 'hidden', border: '1px solid rgba(184,150,90,0.3)', boxShadow: '0 32px 80px rgba(0,0,0,0.5)' }}>
-                <img src="/profile.jpeg" alt="Principal Solicitor" style={{ width: '100%', height: '420px', objectFit: 'cover', display: 'block', filter: 'grayscale(20%)' }} />
+                <img src="/profilepic.jpeg" alt="Principal Solicitor" style={{ width: '100%', height: '420px', objectFit: 'cover', display: 'block', filter: 'grayscale(20%)' }} />
                 <div style={{ background: 'var(--navy)', padding: '24px 28px', borderTop: '2px solid var(--gold)' }}>
                   <div className="sans" style={{ fontSize: '10px', letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '8px' }}>Principal Solicitor</div>
                   <div className="serif" style={{ fontSize: '20px', color: '#fff', lineHeight: 1.2 }}>Shrunga Hosur<br />Krishnamurthy</div>
@@ -393,15 +393,15 @@ export default function VeekshaLawyers() {
             {/* Image side */}
             <div style={{ position: 'relative' }}>
               <div style={{ borderRadius: '2px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.1)' }}>
-                <img src="profile.jpeg" alt="Law office" style={{ width: '100%', height: '630px', objectFit: 'cover', display: 'block' }} />
+                <img src="profilepic.jpeg" alt="Law office" style={{ width: '100%', height: '630px', objectFit: 'cover', display: 'block' }} />
               </div>
               {/* Languages */}
-              <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#fff', border: '1px solid var(--border-soft)', borderLeft: '3px solid var(--gold)', padding: '24px 28px', boxShadow: '0 12px 40px rgba(0,0,0,0.08)', minWidth: '220px' }}>
+              {/* <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#fff', border: '1px solid var(--border-soft)', borderLeft: '3px solid var(--gold)', padding: '24px 28px', boxShadow: '0 12px 40px rgba(0,0,0,0.08)', minWidth: '220px' }}>
                 <div className="sans" style={{ fontSize: '10px', letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px' }}>Languages Spoken</div>
                 {['Hindi', 'English', 'Kannada', 'Telugu'].map(lang => (
                   <div key={lang} className="sans" style={{ fontSize: '13px', color: 'var(--ink-soft)', padding: '5px 0', borderBottom: '1px solid var(--border-soft)' }}>{lang}</div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* Text side */}
@@ -601,7 +601,7 @@ onMouseLeave={(e) => {
 
       {/* ─── FOOTER ─── */}
       <footer style={{ background: 'var(--navy)', padding: '32px 64px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2024 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
+        <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2026 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <span style={{ display: 'block', width: '20px', height: '1px', background: 'var(--gold)', opacity: 0.4 }} />
           <span className="sans" style={{ fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>All rights reserved</span>

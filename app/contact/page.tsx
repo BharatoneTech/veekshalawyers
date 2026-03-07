@@ -67,7 +67,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
           object-fit: contain; display: block; flex-shrink: 0;
           transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
         }
-        .topnav.scrolled .nav-logo { width: 56px; height: 56px; min-width: 56px; min-height: 56px; }
+        .topnav.scrolled .nav-logo { width: 300px; height: 80px; min-width: 300px; min-height: 80px; }
 
         .nav-wordmark-text { font-family: 'DM Serif Display', serif; font-size: 18px; color: #fff; letter-spacing: 0.3px; transition: color 0.4s; line-height: 1.2; }
         .nav-wordmark-text.dark { color: var(--navy); }
@@ -566,7 +566,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
       {/* ── FOOTER ── */}
       <footer className="site-footer" style={{ background: 'var(--navy)', padding: '32px 64px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2024 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
+        <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2026 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <span style={{ display: 'block', width: '20px', height: '1px', background: 'var(--gold)', opacity: 0.4 }} />
           <span className="sans" style={{ fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>All rights reserved</span>

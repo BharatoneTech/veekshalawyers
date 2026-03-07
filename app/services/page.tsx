@@ -47,7 +47,7 @@ export default function ServicesPage() {
         .nav-wordmark { display: flex; align-items: center; gap: 12px; text-decoration: none; transition: opacity 0.3s; }
         .nav-wordmark:hover { opacity: 0.85; }
         .nav-logo { width: 300px; height: 80px; min-width: 300px; min-height: 80px; object-fit: contain; display: block; flex-shrink: 0; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-        .topnav.scrolled .nav-logo { width: 56px; height: 56px; min-width: 56px; min-height: 56px; }
+        .topnav.scrolled .nav-logo { width: 300px; height: 80px; min-width: 300px; min-height: 80px; }
         .nav-wordmark-text { font-family: 'DM Serif Display', serif; font-size: 18px; color: #fff; letter-spacing: 0.3px; transition: color 0.4s; line-height: 1.2; }
         .nav-wordmark-text.dark { color: var(--navy); }
         .nav-wordmark-text sub { font-family: 'Outfit', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; display: block; margin-top: 2px; color: rgba(255,255,255,0.5); transition: color 0.4s; }
@@ -461,7 +461,7 @@ export default function ServicesPage() {
         </section>
 
         <footer className="site-footer">
-          <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2024 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
+          <span className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)', fontWeight: 300 }}>© 2026 Veeksha Lawyers & Consultancy Pty Ltd · NSW, Australia</span>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <span style={{ display: 'block', width: '20px', height: '1px', background: 'var(--gold)', opacity: 0.4 }} />
             <span className="sans" style={{ fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>All rights reserved</span>
