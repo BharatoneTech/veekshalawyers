@@ -367,14 +367,14 @@ export default function VeekshaLawyers() {
 
             {/* Right: Profile card */}
             <div className="hero-right-col fi" style={{ position: 'relative' }}>
-              <div style={{ borderRadius: '2px', overflow: 'hidden', border: '1px solid rgba(184,150,90,0.3)', boxShadow: '0 32px 80px rgba(0,0,0,0.5)' }}>
+              {/* <div style={{ borderRadius: '2px', overflow: 'hidden', border: '1px solid rgba(184,150,90,0.3)', boxShadow: '0 32px 80px rgba(0,0,0,0.5)' }}>
                 <img src="/profilepic.jpeg" alt="Principal Solicitor" style={{ width: '100%', height: '420px', objectFit: 'cover', display: 'block', filter: 'grayscale(20%)' }} />
                 <div style={{ background: 'var(--navy)', padding: '24px 28px', borderTop: '2px solid var(--gold)' }}>
                   <div className="sans" style={{ fontSize: '10px', letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '8px' }}>Principal Solicitor</div>
                   <div className="serif" style={{ fontSize: '20px', color: '#fff', lineHeight: 1.2 }}>Shrunga Hosur<br />Krishnamurthy</div>
                   <div className="sans" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.4)', marginTop: '6px', fontWeight: 300 }}>LLB · MBA · Admitted NSW 2014</div>
                 </div>
-              </div>
+              </div> */}
               {/* Credential badge */}
               {/* <div style={{ position: 'absolute', top: '-12px', right: '-12px', background: 'var(--gold)', borderRadius: '2px', padding: '12px 16px', boxShadow: '0 8px 24px rgba(184,150,90,0.35)' }}>
                 <div className="serif" style={{ fontSize: '16px', color: '#fff', lineHeight: 1 }}>NSW</div>
@@ -422,7 +422,7 @@ export default function VeekshaLawyers() {
                 With deep expertise in <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>property law and immigration law</strong>, she is recognised for being <em>responsive, compassionate, and efficient</em> — delivering clear, practical guidance to every client.
               </p>
               <p className="sans" style={{ fontSize: '15px', color: 'var(--ink-soft)', lineHeight: 1.9, marginBottom: '40px', fontWeight: 300 }}>
-                Her fluency in <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>Hindi, English, Kannada, and Telugu</strong> enables her to serve diverse communities across NSW with ease and confidence.
+                Her fluency in <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>English, Hindi, Kannada, and Telugu</strong> enables her to serve diverse communities across NSW with ease and confidence.
               </p>
 
               {/* Credentials */}
