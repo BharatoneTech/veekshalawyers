@@ -358,7 +358,7 @@ export default function Footer() {
             </p>
 
             <div className="footer-langs">
-              {['Hindi', 'English', 'Kannada', 'Telugu'].map(l => (
+              {['English', 'Hindi', 'Kannada', 'Telugu'].map(l => (
                 <span key={l} className="footer-lang">{l}</span>
               ))}
             </div>
