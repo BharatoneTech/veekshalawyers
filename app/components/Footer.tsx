@@ -443,7 +443,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="contact-text">
-                <a href="tel:+61">+61 (NSW)</a>
+                <a href="tel:+61">+61 469 768 110</a>
               </div>
             </div>
 
