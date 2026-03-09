@@ -111,7 +111,7 @@ export default function WhyUsPage() {
 
         /* ── NAV ── */
         .topnav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; padding: 12px 64px; display: flex; align-items: center; justify-content: space-between; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-        .topnav.scrolled { padding: 8px 64px; background: rgba(250,250,248,0.97); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-soft); box-shadow: 0 1px 32px rgba(0,0,0,0.06); }
+        .topnav.scrolled { padding: 8px 64px; background: #12243C; backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-soft); box-shadow: 0 1px 32px rgba(0,0,0,0.06); }
         .nav-wordmark { display: flex; align-items: center; gap: 12px; text-decoration: none; transition: opacity 0.3s; }
         .nav-wordmark:hover { opacity: 0.85; }
         .nav-logo { width: 300px; height: 80px; min-width: 300px; min-height: 80px; object-fit: contain; display: block; flex-shrink: 0; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }

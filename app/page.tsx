@@ -56,7 +56,7 @@ export default function VeekshaLawyers() {
         }
         .topnav.scrolled {
           padding: 8px 64px;
-          background: rgba(250,250,248,0.97);
+          background: #12243C;
           backdrop-filter: blur(24px);
           border-bottom: 1px solid var(--border-soft);
           box-shadow: 0 1px 32px rgba(0,0,0,0.06);
@@ -412,11 +412,23 @@ export default function VeekshaLawyers() {
               </h2>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px', marginTop: '12px' }}>
                 <span className="gold-rule" />
-                <span className="sans" style={{ fontSize: '12px', color: 'var(--gold)', fontWeight: 500 }}>Principal Solicitor</span>
+                <span
+  className="sans"
+  style={{
+    fontSize: '14px',
+    background: 'var(--gold)',
+    color: '#fff',
+    fontWeight: 900,
+    padding: '6px 14px',
+    borderRadius: '4px'
+  }}
+>
+  Principal Solicitor
+</span>
               </div>
 
               <p className="sans" style={{ fontSize: '15px', color: 'var(--ink-soft)', lineHeight: 1.9, marginBottom: '18px', fontWeight: 300 }}>
-                The Principal Solicitor brings an extensive, internationally diverse legal background. After completing a <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>law degree and MBA in India</strong>, she moved to Australia and has been admitted to practice in New South Wales since 2014.
+                <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>The Principal Solicitor</strong>  brings an extensive, internationally diverse legal background. After completing a <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>law degree and MBA in India</strong>, she moved to Australia and has been admitted to practice in New South Wales since 2014.
               </p>
               <p className="sans" style={{ fontSize: '15px', color: 'var(--ink-soft)', lineHeight: 1.9, marginBottom: '18px', fontWeight: 300 }}>
                 With deep expertise in <strong style={{ fontWeight: 600, color: 'var(--ink)' }}>property law and immigration law</strong>, she is recognised for being <em>responsive, compassionate, and efficient</em> — delivering clear, practical guidance to every client.
@@ -588,7 +600,7 @@ onMouseLeave={(e) => {
             <h2 className="serif" style={{ fontSize: 'clamp(32px,4vw,56px)', fontWeight: 400, color: '#fff', letterSpacing: '-1px', lineHeight: 1.1, marginBottom: '8px' }}>
               Ready to Discuss<br /><em style={{ fontStyle: 'italic', fontWeight: 400 }}>Your Matter?</em>
             </h2>
-            <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Serving NSW · Hindi · English · Kannada · Telugu</p>
+            <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Serving NSW · English · Hindi · Kannada · Telugu</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a href="mailto:contact@veekshalawyers.com.au" style={{ background: 'var(--navy)', color: '#fff', padding: '16px 40px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', transition: 'all 0.3s' }}

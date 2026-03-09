@@ -43,7 +43,7 @@ export default function ServicesPage() {
 
         /* NAV */
         .topnav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; padding: 12px 64px; display: flex; align-items: center; justify-content: space-between; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-        .topnav.scrolled { padding: 8px 64px; background: rgba(250,250,248,0.97); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-soft); box-shadow: 0 1px 32px rgba(0,0,0,0.06); }
+        .topnav.scrolled { padding: 8px 64px; background: #12243C; backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-soft); box-shadow: 0 1px 32px rgba(0,0,0,0.06); }
         .nav-wordmark { display: flex; align-items: center; gap: 12px; text-decoration: none; transition: opacity 0.3s; }
         .nav-wordmark:hover { opacity: 0.85; }
         .nav-logo { width: 300px; height: 80px; min-width: 300px; min-height: 80px; object-fit: contain; display: block; flex-shrink: 0; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
@@ -166,6 +166,19 @@ export default function ServicesPage() {
         .f1 { animation: fadeUp 0.9s 0.1s both; }
         .f2 { animation: fadeUp 0.9s 0.25s both; }
         .f3 { animation: fadeUp 0.9s 0.4s both; }
+
+
+        #property, #buying, #selling, #property-approach,
+#immigration, #visa-applications, #immigration-support {
+  scroll-margin-top: 160px;
+}
+
+@media (max-width: 900px) {
+  #property, #buying, #selling, #property-approach,
+  #immigration, #visa-applications, #immigration-support {
+    scroll-margin-top: 120px;
+  }
+}
 
         /* ── RESPONSIVE ── */
         @media (max-width: 900px) {
@@ -449,7 +462,7 @@ export default function ServicesPage() {
               <h2 className="serif" style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 700, color: '#fff', letterSpacing: '-1px', lineHeight: 1.1, marginBottom: '8px' }}>
                 Ready to Discuss<br /><em style={{ fontStyle: 'italic', fontWeight: 400 }}>Your Matter?</em>
               </h2>
-              <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Serving NSW · Hindi · English · Kannada · Telugu</p>
+              <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Serving NSW · English · Hindi · Kannada · Telugu</p>
             </div>
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
               <a href="/contact" style={{ background: 'var(--navy)', color: '#fff', padding: '16px 36px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none' }}>

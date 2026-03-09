@@ -54,7 +54,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         }
         .topnav.scrolled {
           padding: 8px 64px;
-          background: rgba(250,250,248,0.97); backdrop-filter: blur(24px);
+          background: #12243C; backdrop-filter: blur(24px);
           border-bottom: 1px solid var(--border-soft);
           box-shadow: 0 1px 32px rgba(0,0,0,0.06);
         }
