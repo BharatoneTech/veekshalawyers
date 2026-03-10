@@ -329,7 +329,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
             We're here to help. Reach out to discuss your legal matter and we'll respond promptly with clear, practical guidance.
           </p>
           <div className="f4" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <a href="mailto:shrunga@veekshalawyers.com.au" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--gold)', color: '#fff', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '12px 22px', borderRadius: '3px', textDecoration: 'none' }}>
+            <a href="mailto:contact@veekshalawyers.com.au" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--gold)', color: '#fff', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '12px 22px', borderRadius: '3px', textDecoration: 'none' }}>
               ✉ Email Us
             </a>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.7)', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 500, letterSpacing: '1px', padding: '12px 20px', borderRadius: '3px' }}>
@@ -452,7 +452,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
               <div>
                 <div className="card-label">Email</div>
                 <div className="card-value">
-                  <a href="mailto:shrunga@veekshalawyers.com.au">shrunga@veekshalawyers.com.au</a>
+                  <a href="mailto:contact@veekshalawyers.com.au">contact@veekshalawyers.com.au</a>
                 </div>
               </div>
             </div>
@@ -557,11 +557,11 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
             <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Property Law · Immigration Law · NSW Admitted 2014</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:shrunga@veekshalawyers.com.au"
+            <a href="mailto:contact@veekshalawyers.com.au"
               style={{ background: 'var(--navy)', color: '#fff', padding: '16px 36px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none' }}>
               Email Us Today →
             </a>
-            <div className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>shrunga@veekshalawyers.com.au</div>
+            <div className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>contact@veekshalawyers.com.au</div>
           </div>
         </div>
       </section>
