@@ -379,7 +379,7 @@ export default function Footer() {
                 ['Vision & Mission', '/#vision'],
                 ['Our Services', '/services'],
                 ['Why Choose Us', '/#why'],
-                ['Contact', 'mailto:contact@veekshalawyers.com.au'],
+                ['Contact', 'mailto:shrunga@veekshalawyers.com.au'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <a href={href} className="footer-link">{label}</a>
@@ -430,8 +430,8 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="contact-text">
-                <a href="mailto:contact@veekshalawyers.com.au">
-                  contact@veekshalawyers.com.au
+                <a href="mailto:shrunga@veekshalawyers.com.au">
+                  shrunga@veekshalawyers.com.au
                 </a>
               </div>
             </div>

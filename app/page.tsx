@@ -393,7 +393,7 @@ export default function VeekshaLawyers() {
             {/* Image side */}
             <div style={{ position: 'relative' }}>
               <div style={{ borderRadius: '2px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.1)' }}>
-                <img src="profilepic.jpeg" alt="Law office" style={{ width: '100%', height: '630px', objectFit: 'cover', display: 'block' }} />
+                <img src="profilepic.jpeg" alt="Law office" style={{ width: '75%', height: '500px', objectFit: 'cover', display: 'block' }} />
               </div>
               {/* Languages */}
               {/* <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#fff', border: '1px solid var(--border-soft)', borderLeft: '3px solid var(--gold)', padding: '24px 28px', boxShadow: '0 12px 40px rgba(0,0,0,0.08)', minWidth: '220px' }}>

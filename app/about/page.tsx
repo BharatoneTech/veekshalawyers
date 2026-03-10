@@ -393,7 +393,7 @@ export default function VeekshaLawyers() {
             {/* Image side */}
             <div style={{ position: 'relative' }}>
               <div style={{ borderRadius: '2px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.1)' }}>
-                <img src="profilepic.jpeg" alt="Law office" style={{ width: '100%', height: '630px', objectFit: 'cover', display: 'block' }} />
+                <img src="profilepic.jpeg" alt="Law office" style={{ width: '75%', height: '500px', objectFit: 'cover', display: 'block' }} />
               </div>
               {/* Languages */}
               {/* <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#fff', border: '1px solid var(--border-soft)', borderLeft: '3px solid var(--gold)', padding: '24px 28px', boxShadow: '0 12px 40px rgba(0,0,0,0.08)', minWidth: '220px' }}>
@@ -565,7 +565,7 @@ onMouseLeave={(e) => {
               <p className="sans" style={{ fontSize: '15px', color: 'var(--ink-soft)', lineHeight: 1.85, marginBottom: '36px', fontWeight: 300 }}>
                 What makes us the trusted choice for clients across New South Wales — quality, care, and consistency.
               </p>
-              <a href="mailto:shrunga@veekshalawyers.com.au" className="arrow-link">Book a Consultation →</a>
+              <a href="mailto:contact@veekshalawyers.com.au" className="arrow-link">Book a Consultation →</a>
             </div>
 
             {/* Right: list */}
@@ -603,12 +603,12 @@ onMouseLeave={(e) => {
             <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Serving NSW · English · Hindi · Kannada · Telugu</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:shrunga@veekshalawyers.com.au" style={{ background: 'var(--navy)', color: '#fff', padding: '16px 40px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', transition: 'all 0.3s' }}
+            <a href="mailto:contact@veekshalawyers.com.au" style={{ background: 'var(--navy)', color: '#fff', padding: '16px 40px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', transition: 'all 0.3s' }}
               onMouseEnter={e => e.currentTarget.style.background = '#0d1a2e'}
               onMouseLeave={e => e.currentTarget.style.background = 'var(--navy)'}>
               Email Us Today →
             </a>
-            <div className="sans" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>shrunga@veekshalawyers.com.au</div>
+            <div className="sans" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>contact@veekshalawyers.com.au</div>
           </div>
         </div>
       </section>

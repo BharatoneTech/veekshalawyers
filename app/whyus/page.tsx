@@ -465,7 +465,7 @@ export default function WhyUsPage() {
             <a href="/contact" style={{ background: 'var(--navy)', color: '#fff', padding: '16px 40px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none' }}>
               Book a Consultation →
             </a>
-            <div className="sans" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>contact@veekshalawyers.com.au</div>
+            <div className="sans" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>shrunga@veekshalawyers.com.au</div>
           </div>
         </div>
       </section>
