@@ -198,7 +198,7 @@ export default function VeekshaLawyers() {
         .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; z-index: 1000; }
         .hamburger span { display: block; width: 24px; height: 2px; border-radius: 2px; transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
         .hamburger span.light { background: rgba(255,255,255,0.85); }
-        .hamburger span.dark { background: var(--navy); }
+        .hamburger span.dark { background: #fff; }
         .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
         .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
         .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -248,6 +248,11 @@ export default function VeekshaLawyers() {
         .mob-langs { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 32px; position: relative; z-index: 1; }
         .mob-lang { font-family: 'Outfit', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 1px; color: var(--gold); background: rgba(184,150,90,0.12); border: 1px solid rgba(184,150,90,0.25); padding: 5px 12px; border-radius: 2px; }
 
+        @media (max-width: 900px) {
+  .about-img-wrap { width: 75% !important; margin: 0 auto !important; }
+  .about-img-wrap img { height: 380px !important; }
+}
+
         /* RESPONSIVE */
         @media (max-width: 900px) {
           .topnav, .topnav.scrolled { padding: 10px 24px !important; }
@@ -273,7 +278,7 @@ export default function VeekshaLawyers() {
         <div className="mob-divider" />
         <a href="/contact" className="mob-cta">Contact Us →</a>
         <div className="mob-langs">
-          {['Hindi', 'English', 'Kannada', 'Telugu'].map(l => (
+          {[' English', 'Hindi', 'Kannada', 'Telugu'].map(l => (
             <span key={l} className="mob-lang">{l}</span>
           ))}
         </div>
@@ -393,10 +398,13 @@ export default function VeekshaLawyers() {
 
           <div className="two-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             {/* Image side */}
-            <div style={{ position: 'relative' }}>
-              <div style={{ borderRadius: '2px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.1)' }}>
-                <img src="profilepic.jpeg" alt="Law office" style={{ width: '75%', height: '500px', objectFit: 'cover', display: 'block' }} />
-              </div>
+           
+            <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="about-img-wrap" style={{ borderRadius: '2px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.1)', width: '75%' }}>
+                    <img src="profilepic.jpeg" alt="Principal Solicitor" style={{ width: '100%', height: '500px', objectFit: 'cover', objectPosition: 'top', display: 'block' }} />
+                </div>
+
+
               {/* Languages */}
               {/* <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#fff', border: '1px solid var(--border-soft)', borderLeft: '3px solid var(--gold)', padding: '24px 28px', boxShadow: '0 12px 40px rgba(0,0,0,0.08)', minWidth: '220px' }}>
                 <div className="sans" style={{ fontSize: '10px', letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px' }}>Languages Spoken</div>

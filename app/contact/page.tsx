@@ -96,7 +96,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
           transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
         }
         .hamburger span.light { background: rgba(255,255,255,0.85); }
-        .hamburger span.dark { background: var(--navy); }
+        .hamburger span.dark { background: #fff; }
         .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
         .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
         .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -279,7 +279,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         <div className="mob-divider" />
         <a href="/contact" className="mob-cta mob-active">Contact Us →</a>
         <div className="mob-langs">
-          {['Hindi', 'English', 'Kannada', 'Telugu'].map(l => (
+          {[' English', 'Hindi', 'Kannada', 'Telugu'].map(l => (
             <span key={l} className="mob-lang">{l}</span>
           ))}
         </div>
