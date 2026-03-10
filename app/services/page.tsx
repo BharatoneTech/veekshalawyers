@@ -55,8 +55,10 @@ export default function ServicesPage() {
         .nav-links { display: flex; gap: 40px; align-items: center; }
         .nl { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.25s; cursor: pointer; }
         .nl:hover { color: #fff; }
-        .nl.dk { color: var(--ink-soft); }
-        .nl.dk:hover { color: var(--navy); }
+        .nl.dk { 
+  color: rgba(255,255,255,0.7); 
+}
+        .nl.dk:hover { color: #fff; }
         .nl.active { color: var(--gold) !important; }
         .nav-cta { font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 26px; border-radius: 4px; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; backdrop-filter: blur(8px); }
         .nav-cta:hover { background: rgba(255,255,255,0.25); }
