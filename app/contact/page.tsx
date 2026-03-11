@@ -21,9 +21,31 @@ export default function ContactPage() {
   setFormData(p => ({ ...p, [e.target.name]: e.target.value }))
 }
 
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
-  setSubmitted(true)
+
+  try {
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+
+    const data = await res.json()
+
+    if (data.success) {
+      setSubmitted(true)
+    } else {
+      alert("Failed to send message")
+    }
+
+  } catch (error) {
+    console.error(error)
+    alert("Something went wrong")
+  }
 }
 
   return (
