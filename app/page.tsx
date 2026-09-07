@@ -575,7 +575,7 @@ onMouseLeave={(e) => {
               <p className="sans" style={{ fontSize: '15px', color: 'var(--ink-soft)', lineHeight: 1.85, marginBottom: '36px', fontWeight: 300 }}>
                 What makes us the trusted choice for clients across New South Wales — quality, care, and consistency.
               </p>
-              <a href="mailto:contact@veekshalawyers.com.au" className="arrow-link">Book a Consultation →</a>
+              <a href="mailto:Shrunga@veekshalawyers.com.au" className="arrow-link">Book a Consultation →</a>
             </div>
 
             {/* Right: list */}
