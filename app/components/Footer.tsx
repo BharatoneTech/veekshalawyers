@@ -430,8 +430,8 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="contact-text">
-                <a href="mailto:contact@veekshalawyers.com.au">
-                  contact@veekshalawyers.com.au
+                <a href="mailto:Shrunga@veekshalawyers.com.au">
+                  Shrunga@veekshalawyers.com.au
                 </a>
               </div>
             </div>
