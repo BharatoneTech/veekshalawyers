@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "contact@veekshalawyers.com.au",
+      to: "Shrunga@veekshalawyers.com.au",
       subject: "New Contact Form Enquiry",
       html: `
         <h2>New Website Enquiry</h2>
