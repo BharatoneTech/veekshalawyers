@@ -579,11 +579,11 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             <p className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}>Property Law · Immigration Law · NSW Admitted 2014</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:contact@veekshalawyers.com.au"
+            <a href="mailto:Shrunga@veekshalawyers.com.au"
               style={{ background: 'var(--navy)', color: '#fff', padding: '16px 36px', borderRadius: '3px', fontFamily: 'Outfit,sans-serif', fontWeight: 600, fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none' }}>
               Email Us Today →
             </a>
-            <div className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>contact@veekshalawyers.com.au</div>
+            <div className="sans" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', fontWeight: 300 }}>Shrunga@veekshalawyers.com.au</div>
           </div>
         </div>
       </section>
