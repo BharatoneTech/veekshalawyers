@@ -474,7 +474,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               <div>
                 <div className="card-label">Email</div>
                 <div className="card-value">
-                  <a href="mailto:contact@veekshalawyers.com.au">contact@veekshalawyers.com.au</a>
+                  <a href="mailto:Shrunga@veekshalawyers.com.au">Shrunga@veekshalawyers.com.au</a>
                 </div>
               </div>
             </div>
