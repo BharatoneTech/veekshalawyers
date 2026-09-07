@@ -351,7 +351,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             We're here to help. Reach out to discuss your legal matter and we'll respond promptly with clear, practical guidance.
           </p>
           <div className="f4" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <a href="mailto:contact@veekshalawyers.com.au" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--gold)', color: '#fff', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '12px 22px', borderRadius: '3px', textDecoration: 'none' }}>
+            <a href="Shrunga@veekshalawyers.com.au" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--gold)', color: '#fff', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '12px 22px', borderRadius: '3px', textDecoration: 'none' }}>
               ✉ Email Us
             </a>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.7)', fontFamily: 'Outfit,sans-serif', fontSize: '11px', fontWeight: 500, letterSpacing: '1px', padding: '12px 20px', borderRadius: '3px' }}>
